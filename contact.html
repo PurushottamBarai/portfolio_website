@@ -1,149 +1,127 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      padding: 20px;
-      margin-top:3% ;
-      margin-right: 30%;
-      margin-left: 30%;
-      margin-bottom: 0px;
-      align-items: center;
-      background-color: rgb(225, 218, 226);
-      border: 5px solid none;
-      border-radius: 15px;
-    }
-    form input, form textarea {
-      width: 40%;
-      padding: 10px;
-      margin: 5px 0;
-      border: 1px solid #615959;
-      border-radius: 6px;
-    }
-    form input[type="submit"] {
-      width: auto;
-      background-color: #313131;
-      color: white;
-      cursor: pointer;
-    }
-    form input[type="submit"]:hover {
-      background-color: #555;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-  <header>
-    <h1>Contact Me</h1>
-    <p>If you'd like to get in touch, feel free to fill out the form below.</p>
-  </header>
-  <div class="container">
-    <h2>Get in Touch</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-      
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-      
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" required></textarea><br><br>
-      
-      <input type="submit" value="Send">
-    </form>
-  </div>
+      body {
+        min-height: 100vh;
+        padding: 20px;
+      }
 
-</body>
+      .right a {
+        margin-left: 2rem;
+        text-decoration: none;
+        color: #dcdcdc;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .right a:hover {
+        color: #667eea;
+      }
+
+      .container {
+        max-width: 350px;
+        margin: 8rem auto;
+        padding: 2rem;
+        background: rgb(255, 252, 252);
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;  
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.6rem;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        transition: border-color 0.3s;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #667eea;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 90px;
+      }
+
+      button {
+        padding: 0.6rem 1.5rem;
+        background: linear-gradient(135deg, #3e5bdd 0%, #52188c 100%);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;  
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="left">Purushottam Barai</div>
+        <div class="right">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="#">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <form action="#" method="post">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your message"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <footer>
+        <div class="footer">
+            <h3>Purushottam Barai</h3>        
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>          
+            <a href="https://www.linkedin.com/in/purushottam-barai-47ab46337">Linkedin</a>
+            <a href="https://github.com/PurushottamBarai">Github</a>
+        </div>
+      <div class="footer-rights">Created by &copy; 2025 Purushottam Barai</div>
+    </footer>
+  </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Me</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      padding: 20px;
-      margin-top:3% ;
-      margin-right: 30%;
-      margin-left: 30%;
-      margin-bottom: 0px;
-      align-items: center;
-      background-color: rgb(225, 218, 226);
-      border: 5px solid none;
-      border-radius: 15px;
-    }
-    form input, form textarea {
-      width: 40%;
-      padding: 10px;
-      margin: 5px 0;
-      border: 1px solid #615959;
-      border-radius: 6px;
-    }
-    form input[type="submit"] {
-      width: auto;
-      background-color: #313131;
-      color: white;
-      cursor: pointer;
-    }
-    form input[type="submit"]:hover {
-      background-color: #555;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Contact Me</h1>
-    <p>If you'd like to get in touch, feel free to fill out the form below.</p>
-  </header>
-  <div class="container">
-    <h2>Get in Touch</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-      
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-      
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" required></textarea><br><br>
-      
-      <input type="submit" value="Send">
-    </form>
-  </div>
-
-</body>
-</html>
->>>>>>> 14dfe6b989404cc5ecf0355fa3a18dfe7720bbf3
