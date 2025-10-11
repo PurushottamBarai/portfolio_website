@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+      margin-top:3% ;
+      margin-right: 30%;
+      margin-left: 30%;
+      margin-bottom: 0px;
+      align-items: center;
+      background-color: rgb(225, 218, 226);
+      border: 5px solid none;
+      border-radius: 15px;
+    }
+    form input, form textarea {
+      width: 40%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #615959;
+      border-radius: 6px;
+    }
+    form input[type="submit"] {
+      width: auto;
+      background-color: #313131;
+      color: white;
+      cursor: pointer;
+    }
+    form input[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Me</h1>
+    <p>If you'd like to get in touch, feel free to fill out the form below.</p>
+  </header>
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      
+      <input type="submit" value="Send">
+    </form>
+  </div>
+
+</body>
+</html>
