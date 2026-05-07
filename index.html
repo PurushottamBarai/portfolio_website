@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purushottam Barai</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="left"><a href="#home" style="color:white;text-decoration:none;">Purushottam</a></div>
+    
+    <div class="right">        
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+    <!-- HOME SECTION -->
+    <section id="home" class="firstsection">
+        <div class="leftsection">
+          <p class="intro">
+            Hello! I'm <span class="name">Purushottam</span>
+            <br>
+            <span class="designation">I am an aspiring <br>Software Developer</span>
+          </p>
+
+          <div class="buttons">
+            <button class="btn">
+              <a href="ResumeLtst.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </button>
+            <button class="btn">
+              <a href="https://in.linkedin.com/in/PurushottamBarai" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="rightsection">
+          <img src="Images/background.png" alt="Purushottam Barai Software Developer background" loading="lazy" />
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="container-padding" style="background: rgba(30, 41, 59, 0.5); border-radius: 16px; margin: 4rem auto;">
+        <h2>About Me</h2>
+        <div class="post-content" style="background: transparent; border: none; padding: 0;">
+            <p>I am an aspiring Software Developer with a strong passion for building web applications and exploring new technologies. I love crafting clean, elegant, and efficient code to solve real-world problems. My goal is to continuously learn and grow in the ever-evolving field of software engineering.</p>
+            <p>I have experience with modern web development practices, focusing heavily on responsive design, performance optimization, and creating intuitive user experiences.</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="slider-section" id="projects">
+        <h2>Projects</h2>
+        <div class="custom-slider">
+            <div class="slides">
+                <div class="slide active">
+                    <a href="https://purushottambarai.github.io/CareerCraft/" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%;">
+                        <img src="Images/careercraft.png" alt="CareerCraft Project Showcase" loading="lazy">
+                    </a>
+                    <div class="slide-caption">CareerCraft</div>
+                </div>
+                <div class="slide">
+                    <a href="https://purushottambarai.github.io/FindMyCollege/" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%;">
+                        <img src="Images/findmycollege.png" alt="FindMyCollege Project Showcase" loading="lazy">
+                    </a>
+                    <div class="slide-caption">FindMyCollege</div>
+                </div>
+                <div class="slide">
+                    <a href="https://purushottambarai.github.io/LeetStats/" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%;">
+                        <img src="Images/leetstats.png" alt="LeetStats Project Showcase" loading="lazy">
+                    </a>
+                    <div class="slide-caption">LeetStats</div>
+                </div>
+            </div>
+            <button class="prev-slide" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next-slide" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        
+        <div class="container-padding" style="padding-top: 4rem;">
+            <h3 style="text-align:center; font-size: 2rem; margin-bottom: 2rem; color: #f8fafc;">My Work Details</h3>
+            <div class="post-content">
+                <h3 style="color: #a78bfa; margin-bottom: 1rem;">CareerCraft</h3>
+                <p>A comprehensive platform for career development, featuring resume building and mock interviews.</p>
+            </div>
+            <div class="post-content">
+                <h3 style="color: #a78bfa; margin-bottom: 1rem;">FindMyCollege</h3>
+                <p>A web application to help students find colleges based on their preferences and scores.</p>
+            </div>
+            <div class="post-content">
+                <h3 style="color: #a78bfa; margin-bottom: 1rem;">LeetStats</h3>
+                <p>A dashboard to visualize LeetCode progress and statistics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="container-padding" style="background: rgba(30, 41, 59, 0.5); border-radius: 16px; margin: 4rem auto; position: relative;">
+        <h2>My Blog</h2>
+        <div class="blog-slider-wrapper" style="position: relative; overflow: hidden; padding: 1rem 0;">
+            <div class="blog-slider-track" id="blog-track" style="display: flex; gap: 2rem; transition: transform 0.5s ease;">
+                <div class="blog-slide-item" style="flex: 0 0 calc(50% - 1rem); min-width: 0; background: #1e293b; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+                    <h3 style="color: #6366f1; margin-bottom: 0.5rem;"><a href="#" style="text-decoration:none; color:inherit;">Exploring Web Performance</a></h3>
+                    <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 1rem;">May 01, 2026</p>
+                    <p style="color: #cbd5e1;">A deep dive into optimizing web performance for better user experience.</p>
+                    <br>
+                    <a href="#" style="color: #a78bfa; text-decoration: none; font-weight: bold;">Read More &raquo;</a>
+                </div>
+                <div class="blog-slide-item" style="flex: 0 0 calc(50% - 1rem); min-width: 0; background: #1e293b; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+                    <h3 style="color: #6366f1; margin-bottom: 0.5rem;"><a href="#" style="text-decoration:none; color:inherit;">The Future of React</a></h3>
+                    <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 1rem;">April 15, 2026</p>
+                    <p style="color: #cbd5e1;">Discussing the upcoming features in React and how they will change development.</p>
+                    <br>
+                    <a href="#" style="color: #a78bfa; text-decoration: none; font-weight: bold;">Read More &raquo;</a>
+                </div>
+                <div class="blog-slide-item" style="flex: 0 0 calc(50% - 1rem); min-width: 0; background: #1e293b; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+                    <h3 style="color: #6366f1; margin-bottom: 0.5rem;"><a href="#" style="text-decoration:none; color:inherit;">CSS Grid vs Flexbox</a></h3>
+                    <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 1rem;">March 20, 2026</p>
+                    <p style="color: #cbd5e1;">When to use CSS Grid and when to rely on Flexbox for your layouts.</p>
+                    <br>
+                    <a href="#" style="color: #a78bfa; text-decoration: none; font-weight: bold;">Read More &raquo;</a>
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <button onclick="moveBlogSlide(-1)" style="position: absolute; top: 50%; left: 0px; transform: translateY(-50%); background: rgba(99, 102, 241, 0.8); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; z-index: 10;">&#10094;</button>
+            <button onclick="moveBlogSlide(1)" style="position: absolute; top: 50%; right: 0px; transform: translateY(-50%); background: rgba(99, 102, 241, 0.8); color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; z-index: 10;">&#10095;</button>
+        </div>
+    </section>
+
+</main>
+
+<footer id="contact">
+  <div class="footer-top">
+    <!-- Left Corner: Links & Logo -->
+    <div class="footer-left">
+        <h3>Purushottam Barai</h3>        
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="https://in.linkedin.com/in/PurushottamBarai" target="_blank" rel="noopener noreferrer">Linkedin</a>
+            <a href="https://github.com/PurushottamBarai">Github</a>
+        </div>
+    </div>
+
+    <!-- Right Corner: Contact Form -->
+    <div class="footer-right">
+        <div class="footer-contact-form">
+            <form action="#" method="POST" class="wpcf7">
+                <input type="text" name="visitor_name" placeholder="Your Name" required>
+                <input type="email" name="visitor_email" placeholder="Your Email" required>
+                <textarea name="visitor_message" rows="3" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+  </div>
+
+  <div class="footer-rights">
+    Created by &copy; 2026 Purushottam Barai
+  </div>
+</footer>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function changeSlide(direction) {
+    if(slides.length === 0) return;
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
+
+if(slides.length > 0) {
+    setInterval(() => changeSlide(1), 5000);
+}
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        if(this.getAttribute('href') === '#') return;
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) {
+            const headerOffset = 80;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            window.scrollTo({
+                 top: offsetPosition,
+                 behavior: "smooth"
+            });
+        }
+    });
+});
+
+// Blog Slider 
+let currentBlogIndex = 0;
+function moveBlogSlide(direction) {
+    const track = document.getElementById('blog-track');
+    if (!track) return;
+    const slides = track.querySelectorAll('.blog-slide-item');
+    if (slides.length === 0) return;
+    
+    // responsive 
+    const isMobile = window.innerWidth <= 768;
+    const itemsPerView = isMobile ? 1 : 2;
+    const maxIndex = slides.length - itemsPerView;
+    
+    if (maxIndex <= 0) return; 
+    
+    currentBlogIndex += direction;
+    if (currentBlogIndex > maxIndex) currentBlogIndex = 0;
+    if (currentBlogIndex < 0) currentBlogIndex = maxIndex;
+    
+    const itemWidth = slides[0].offsetWidth;
+    const gap = 32; // 2rem in px
+    track.style.transform = `translateX(-${currentBlogIndex * (itemWidth + gap)}px)`;
+}
+
+
+window.addEventListener('resize', () => {
+    const track = document.getElementById('blog-track');
+    if(track) {
+        currentBlogIndex = 0;
+        track.style.transform = 'translateX(0px)';
+        const slides = track.querySelectorAll('.blog-slide-item');
+        if (window.innerWidth <= 768) {
+            slides.forEach(s => s.style.flex = '0 0 100%');
+        } else {
+            slides.forEach(s => s.style.flex = '0 0 calc(50% - 1rem)');
+        }
+    }
+});
+window.dispatchEvent(new Event('resize'));
+</script>
+
+</body>
+</html>
