@@ -35,4 +35,4 @@ For any inquiries, you can reach out via the contact form on the website, or con
 
 ## Live Preview
 
-View the live project here: [Live Portfolio](https://purushottambarai.github.io/)
+View the live project here: [Live Portfolio](https://purushottambarai.github.io/portfolio_website)
